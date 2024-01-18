@@ -1,0 +1,11 @@
+.has-shadow {
+    box-shadow: $shadow;
+}
+
+.bg {
+    @each $color, $value in $core-colors {
+        &-#{$color} {
+            background-color: $value;
+        }
+    }
+}

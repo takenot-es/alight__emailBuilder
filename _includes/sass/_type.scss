@@ -1,0 +1,70 @@
+body, html, h1, h2, h3, h4, h5, h6, p, ul, li, .h1, .h2, .h3, .h4, .h5, .h6, .p {
+    font-family: $font-family;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, .h1, .h2, .h3, .h4, .h5, .h6, .p {
+    margin-bottom: 0;
+}
+
+.strong, strong {
+    font-weight: bold;
+}
+
+h1, .h1 {
+    font-weight: bold;
+    line-height: $heading-line-height;
+    margin-top: 0;
+}
+
+h2, h3, .h2, .h3 {
+    line-height: $heading-line-height;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+h4, h5, h6, p, .h4, .h5, .h6, .p, ul, li {
+    line-height: $body-line-height;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+p, .p, ul, li {
+    font-size: $body-font-size;
+    margin-top: 0;
+}
+
+.type {
+    @each $color, $value in $core-colors {
+        &-#{$color} {
+            color: $value !important;
+        }
+    }
+
+    &-center {
+        text-align: center;
+    }
+
+    &-right {
+        text-align: right;
+    }
+
+    &-left {
+        text-align: left;
+    }
+
+    &-large {
+        font-size: 48px;
+
+        @media (max-width: 632px) {
+            font-size: 36px;
+          }
+
+    }
+}
+
+.eyebrow {
+    font-size: $body-font-size;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: $spacer-1 * .5;
+}
