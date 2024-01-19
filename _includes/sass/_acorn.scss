@@ -10,7 +10,7 @@ img {border: 0; line-height: 100%; vertical-align: middle;}
   .container {width: 100%!important;}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .col {
     display: inline-block!important;
     line-height: 23px;
@@ -97,3 +97,7 @@ img {border: 0; line-height: 100%; vertical-align: middle;}
   .py-sm-16 {padding-top: 16px!important; padding-bottom: 16px!important;}
   .py-sm-24 {padding-top: 24px!important; padding-bottom: 24px!important;}
 }
+
+.v-align-top { vertical-align: top !important; }
+.v-align-middle { vertical-align: middle !important;}
+.v-align-bottom { vertical-align: bottom !important;}

@@ -5,7 +5,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 #Global Links
-
+logo_black: https://go.alight.com/rs/777-ERD-451/images/alight--black--EM.png?version=0
+logo_white: https://go.alight.com/rs/777-ERD-451/images/alight--white--EM.png?version=0
+logo_yellow: https://go.alight.com/rs/777-ERD-451/images/alight--yellow--EM.png?version=0
 
 # SASS
 sass:
